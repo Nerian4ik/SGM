@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобильный калькулятор</title>
+   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Логотип</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О компании</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Адрес</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="calculator">
+        <h2 class="text-center">Рассчитать материал по марке автомобиля</h2>
+        <select class="form-control" id="brand">
+            <option value="">Выберите марку</option>
+            <option value="mazda">Mazda</option>
+            <option value="ford">Ford</option>
+        </select>
+        <select class="form-control hidden" id="model">
+            <!-- Модели автомобилей будут добавлены динамически -->
+        </select>
+        <div class="btn-group hidden" id="bodyType">
+            <button class="btn btn-secondary">Седан</button>
+            <button class="btn btn-secondary">Хетчбек</button>
+            <button class="btn btn-secondary">Универсал</button>
+        </div>
+    </div>
+    <div class="container hidden" id="results">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Премиум</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Стандарт</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Эконом</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
