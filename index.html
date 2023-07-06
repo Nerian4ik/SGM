@@ -7,81 +7,91 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/index.css">
 </head>
-<body><div class="wrapper">
-    <header class="d-flex justify-content-around align-items-center py-3 mb-4 bg-orange-gradient">
-       <a href="https://sgm-techno.ru/"><img src="./img/logo_main.png" alt="" class="logo"></a> 
-        
-        <div id="contacts">Контакты</div>
-        <div id="about">О компании</div>
-        <div id="address">Адрес</div>
-    </header>
+<body>
+  
+  
     
-    <main>
-        <div id="calculator" class="container bg-white rounded shadow p-4">
-            <h1 class="text-center mb-4">Рассчитать по марке и модели автомобиля</h1>
-            <div class="form-group">
-                <select id="brand" class="form-control">
-                    <option value="">Выберите марку</option>
-                    <option value="mazda">Mazda</option>
-                    <option value="ford">Ford</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <select id="model" class="form-control d-none"></select>
-            </div>
-            <div id="bodyType" class="d-none mb-4">
-                <button class="btn btn-orange">Седан</button>
-                <button class="btn btn-orange">Хетчбек</button>
-                <button class="btn btn-orange">Универсал</button>
-            </div>
-            <div id="processingZones" class="d-none mb-4">
-                <button class="btn btn-orange">Капот</button>
-                <button class="btn btn-orange">Крыша</button>
-                <button class="btn btn-orange">Пол</button>
-                <button class="btn btn-orange">Двери</button>
-                <button class="btn btn-orange">Багажник</button>
-                <button class="btn btn-orange">Арки (внешняя обработка)</button>
-                <button class="btn btn-orange">Перегородка мотороного отсека</button>
-            </div>
-            <div id="sheetSize" class="d-none mb-4">
-                <button class="btn btn-orange">Маленькие листы</button>
-                <button class="btn btn-orange">Большие листы</button>
-            </div>
-           
+    <div class="video-background">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="./video/prew.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <header class="d-flex justify-content-around align-items-center py-3 mb-4 bg-orange-gradient">
+                <a href="https://sgm-techno.ru/"><img src="./img/logo_main.png" alt="" class="logo"></a> 
+                 
+                 <div id="contacts">Контакты</div>
+                 <div id="about">О компании</div>
+                 <div id="address">Адрес</div>
+             </header>
+            <main>
+                <div id="calculator" class="container bg-white rounded shadow p-4">
+                    <h1 class="text-center mb-4">Рассчитать по марке и модели автомобиля</h1>
+                    <div class="form-group">
+                        <select id="brand" class="form-control">
+                            <option value="">Выберите марку</option>
+                            <option value="mazda">Mazda</option>
+                            <option value="ford">Ford</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="model" class="form-control d-none"></select>
+                    </div>
+                    <div id="bodyType" class="d-none mb-4">
+                        <button class="btn btn-orange">Седан</button>
+                        <button class="btn btn-orange">Хетчбек</button>
+                        <button class="btn btn-orange">Универсал</button>
+                    </div>
+                    <div id="processingZones" class="d-none mb-4">
+                        <button class="btn btn-orange">Капот</button>
+                        <button class="btn btn-orange">Крыша</button>
+                        <button class="btn btn-orange">Пол</button>
+                        <button class="btn btn-orange">Двери</button>
+                        <button class="btn btn-orange">Багажник</button>
+                        <button class="btn btn-orange">Арки (внешняя обработка)</button>
+                        <button class="btn btn-orange">Перегородка мотороного отсека</button>
+                    </div>
+                    <div id="sheetSize" class="d-none mb-4">
+                        <button class="btn btn-orange">Маленькие листы</button>
+                        <button class="btn btn-orange">Большие листы</button>
+                    </div>
+                   
+                </div>
+                <div id="quality" class="d-none">
+                    <div class="card text-center">
+                        <div class="card-header">Премиум</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Максимальный эффект</h5>
+                            <p class="card-text">Внутрь дверей, 4 двери</p>
+                            <p class="card-text">Тех. отверстия в дверях + пластиковые обшивки, 4 двери</p>
+                            <p class="card-text">Пол салона</p>
+                            <p class="card-text">Пол багажника</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-header">Стандарт</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Оптимальный эффект</h5>
+                            <p class="card-text">Внутрь дверей, 4 двери</p>
+                            <p class="card-text">Тех. отверстия в дверях + пластиковые обшивки, 4 двери</p>
+                            <p class="card-text">Пол салона</p>
+                            <p class="card-text">Пол багажника</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-header">Эконом</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Базовый эффект</h5>
+                            <p class="card-text">Внутрь дверей, 4 двери</p>
+                            <p class="card-text">Тех. отверстия в дверях + пластиковые обшивки, 4 двери</p>
+                            <p class="card-text">Пол салона</p><p class="card-text">Пол багажника</p>
+                        </div>
+                    </div>
+                </div>
+            </main></div>
+        
         </div>
-        <div id="quality" class="d-none">
-            <div class="card text-center">
-                <div class="card-header">Премиум</div>
-                <div class="card-body">
-                    <h5 class="card-title">Максимальный эффект</h5>
-                    <p class="card-text">Внутрь дверей, 4 двери</p>
-                    <p class="card-text">Тех. отверстия в дверях + пластиковые обшивки, 4 двери</p>
-                    <p class="card-text">Пол салона</p>
-                    <p class="card-text">Пол багажника</p>
-                </div>
-            </div>
-            <div class="card text-center">
-                <div class="card-header">Стандарт</div>
-                <div class="card-body">
-                    <h5 class="card-title">Оптимальный эффект</h5>
-                    <p class="card-text">Внутрь дверей, 4 двери</p>
-                    <p class="card-text">Тех. отверстия в дверях + пластиковые обшивки, 4 двери</p>
-                    <p class="card-text">Пол салона</p>
-                    <p class="card-text">Пол багажника</p>
-                </div>
-            </div>
-            <div class="card text-center">
-                <div class="card-header">Эконом</div>
-                <div class="card-body">
-                    <h5 class="card-title">Базовый эффект</h5>
-                    <p class="card-text">Внутрь дверей, 4 двери</p>
-                    <p class="card-text">Тех. отверстия в дверях + пластиковые обшивки, 4 двери</p>
-                    <p class="card-text">Пол салона</p><p class="card-text">Пол багажника</p>
-                </div>
-            </div>
-        </div>
-    </main></div>
-</div>
+      </div>
+    
     <script src="js/index.js"></script>
 </body>
 </html>
