@@ -1,7 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
-    
-}
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  body.loaded {
+    opacity: 1;
+  }
+  
 
 .wrapper {
     background-image: url("../img/promo.jpg");
@@ -19,10 +24,7 @@ header {
     background: linear-gradient(90deg, rgba(255,140,0,1) 0%, rgba(255,165,0,1) 100%);
 }
 
-.btn-orange {
-    background: linear-gradient(90deg, rgba(255,140,0,1) 0%, rgba(255,165,0,1) 100%);
-    color: white;
-}
+
 
 .btn-orange:hover {
     background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgba(255,140,0,1) 100%);
@@ -56,4 +58,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.active {
+    background: linear-gradient(90deg, rgba(255,140,0,1) 0%, rgba(255,165,0,1) 100%);
 }
